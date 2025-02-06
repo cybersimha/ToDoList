@@ -9,43 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToDoList
 build_property.RootNamespace = ToDoList
-build_property.ProjectDir = D:\Code\Core\ToDoList\
+build_property.ProjectDir = D:\Code\Core\todolist\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Code\Core\ToDoList
+build_property.MSBuildProjectDirectory = D:\Code\Core\todolist
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Code/Core/ToDoList/Views/Home/Index.cshtml]
+[D:/Code/Core/todolist/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/Home/Privacy.cshtml]
+[D:/Code/Core/todolist/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/Shared/Error.cshtml]
+[D:/Code/Core/todolist/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Code/Core/todolist/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/Todo/Index.cshtml]
+[D:/Code/Core/todolist/Views/Todo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/Core/todolist/Views/Todo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/_ViewImports.cshtml]
+[D:/Code/Core/todolist/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/_ViewStart.cshtml]
+[D:/Code/Core/todolist/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Core/ToDoList/Views/Shared/_Layout.cshtml]
+[D:/Code/Core/todolist/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dt7ithozdg

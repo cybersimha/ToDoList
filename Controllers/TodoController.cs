@@ -15,11 +15,11 @@ namespace TodoList.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(string title, DateTime dueDate, string priority)
+        public IActionResult Add(string title, DateTime dueDate, string priority, TodoStatus status, string comments)
         {
             if (!string.IsNullOrEmpty(title))
                 {
-                    todoItems.Add(new TodoItem { Id = nextId++, Title = title, IsCompleted = false, DueDate = dueDate, Priority = priority });
+                    todoItems.Add(new TodoItem { Id = nextId++, Title = title, IsCompleted = false, DueDate = dueDate, Priority = priority, Status= status, Comments = comments });
                 }
             return RedirectToAction("Index");
         }
@@ -32,6 +32,11 @@ namespace TodoList.Controllers
                 todoItems.Remove(itemToRemove);
             }
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }

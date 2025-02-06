@@ -2,23 +2,34 @@
 
 <h1>Todo List</h1>
 
-<form asp-controller="Todo" asp-action="Add" method="post">
-    <input type="text" name="title" placeholder="Title" required/>
-    <input type="date" name="dueDate" />  @* Added Due Date input *@
-    <select name="priority">         @* Added Priority dropdown *@
-        <option value="High">High</option>
-        <option value="Medium">Medium</option>
-        <option value="Low">Low</option>
-    </select>
-    <button type="submit">Add</button>
-</form>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
 
-<ul>
-    @foreach (var item in Model)
-    {
-        <li>
-            @item.Title (Due: @item.DueDate.ToShortDateString(), Priority: @item.Priority) @* Display Due Date and Priority *@
-            <a asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-        </li>
-    }
-</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>  @* Added Status column *@
+            <th>Comments</th> @* Added Comments column *@
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.DueDate.ToShortDateString()</td>
+                <td>@item.Priority</td>
+                <td>@item.Status</td>    @* Display Status *@
+                <td>@item.Comments</td>  @* Display Comments *@
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
