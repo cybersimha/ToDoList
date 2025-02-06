@@ -1,0 +1,18 @@
+@model List<TodoList.Models.TodoItem>  //@* Important: Replace TodoList with your project name *@
+
+<h1>Todo List</h1>
+
+<form asp-controller="Todo" asp-action="Add" method="post">
+    <input type="text" name="title" />
+    <button type="submit">Add</button>
+</form>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Title
+            <a asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        </li>
+    }
+</ul>
