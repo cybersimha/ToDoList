@@ -15,12 +15,12 @@ namespace TodoList.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(string title)
+        public IActionResult Add(string title, DateTime dueDate, string priority)
         {
             if (!string.IsNullOrEmpty(title))
-            {
-                todoItems.Add(new TodoItem { Id = nextId++, Title = title, IsCompleted = false });
-            }
+                {
+                    todoItems.Add(new TodoItem { Id = nextId++, Title = title, IsCompleted = false, DueDate = dueDate, Priority = priority });
+                }
             return RedirectToAction("Index");
         }
 

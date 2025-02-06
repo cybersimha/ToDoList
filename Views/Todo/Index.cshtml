@@ -1,9 +1,15 @@
-@model List<TodoList.Models.TodoItem>  //@* Important: Replace TodoList with your project name *@
+@model List<TodoList.Models.TodoItem>
 
 <h1>Todo List</h1>
 
 <form asp-controller="Todo" asp-action="Add" method="post">
-    <input type="text" name="title" />
+    <input type="text" name="title" placeholder="Title" required/>
+    <input type="date" name="dueDate" />  @* Added Due Date input *@
+    <select name="priority">         @* Added Priority dropdown *@
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
     <button type="submit">Add</button>
 </form>
 
@@ -11,7 +17,7 @@
     @foreach (var item in Model)
     {
         <li>
-            @item.Title
+            @item.Title (Due: @item.DueDate.ToShortDateString(), Priority: @item.Priority) @* Display Due Date and Priority *@
             <a asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
         </li>
     }

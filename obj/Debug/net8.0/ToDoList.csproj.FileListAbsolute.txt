@@ -28,3 +28,4 @@ D:\Code\Core\todolist\obj\Debug\net8.0\refint\ToDoList.dll
 D:\Code\Core\todolist\obj\Debug\net8.0\ToDoList.pdb
 D:\Code\Core\todolist\obj\Debug\net8.0\ToDoList.genruntimeconfig.cache
 D:\Code\Core\todolist\obj\Debug\net8.0\ref\ToDoList.dll
+D:\Code\Core\todolist\obj\Debug\net8.0\ToDoList.sourcelink.json
