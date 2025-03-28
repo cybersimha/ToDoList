@@ -2,9 +2,9 @@ name: SonarQube Analysis
 
 on:
   push:
-    branches: [ "main" ] # Or your main branch name
+    branches: [ "master" ] # Or your main branch name
   pull_request:
-    branches: [ "main" ] # Or your main branch name
+    branches: [ "master" ] # Or your main branch name
 
 jobs:
   build:
