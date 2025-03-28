@@ -17,14 +17,14 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0' # Replace with your .NET version
+          dotnet-version: '8.0' # Replace with your .NET version
 
       - name: Install SonarQube scanner
         run: |
           dotnet tool install --global dotnet-sonarscanner
 
       - name: Begin SonarQube analysis
-        run: dotnet-sonarscanner begin /k:"YOUR_SONARCLOUD_ORGANIZATION_KEY:YOUR_PROJECT_KEY" /d:sonar.login="${{ secrets.SONARQUBE_TOKEN }}" /o:"YOUR_SONARCLOUD_ORGANIZATION_KEY" /d:sonar.host.url="https://sonarcloud.io"
+        run: dotnet-sonarscanner begin /k:"cybersimha:cybersimha_ToDoList" /d:sonar.login="${{ secrets.SONARQUBE_TOKEN }}" /o:"cybersimha" /d:sonar.host.url="https://sonarcloud.io"
 
       - name: Build and test
         run: |
